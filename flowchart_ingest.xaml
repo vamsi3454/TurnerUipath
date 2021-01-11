@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="flowchart_ingest" this:flowchart_ingest.search="&lt;html app='chrome.exe' title='CLEAR' /&gt;&lt;webctrl id='Search' tag='INPUT' /&gt;" this:flowchart_ingest.click_media_level_ingest="&lt;html app='chrome.exe' title='CLEAR' /&gt;&lt;webctrl aaname='ING' parentid='main_wfStatusBar' tag='SPAN' /&gt;" this:flowchart_ingest.Click_segment_level="&lt;html app='chrome.exe' title='CLEAR' /&gt;&#xA;&lt;webctrl aaname='ING' parentid='main_wfStatusBar' tag='SPAN' idx='2' /&gt;&#xA;" this:flowchart_ingest.get_status_selector="&lt;html app='chrome.exe' title='CLEAR' /&gt;&lt;webctrl parentid='drpDown_' tag='SPAN' /&gt;" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="flowchart_ingest" this:flowchart_ingest.search="&lt;html app='chrome.exe' title='CLEAR' /&gt;&lt;webctrl id='Search' tag='INPUT' /&gt;" this:flowchart_ingest.click_media_level_ingest="&lt;html app='chrome.exe' title='CLEAR' /&gt;&lt;webctrl aaname='ING' parentid='main_wfStatusBar' tag='SPAN' /&gt;" this:flowchart_ingest.Click_segment_level="&lt;html app='chrome.exe' title='CLEAR' /&gt;&#xD;&#xA;&lt;webctrl aaname='ING' parentid='main_wfStatusBar' idx='5' /&gt;&#xD;&#xA;" this:flowchart_ingest.get_status_selector="&lt;html app='chrome.exe' title='CLEAR' /&gt;&lt;webctrl parentid='drpDown_' tag='SPAN' /&gt;" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="search" Type="InArgument(x:String)" />
     <x:Property Name="click_media_level_ingest" Type="InArgument(x:String)" />
@@ -9,7 +9,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>754,793</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>767,833</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>flowchart_ingest_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="52">
@@ -104,7 +104,7 @@
             <av:PointCollection x:Key="ConnectorLocation">310,193 310,224.5</av:PointCollection>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <Sequence DisplayName="Media _Segment" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_2">
+        <Sequence DisplayName="Media _Segment" sap:VirtualizedContainerService.HintSize="376,756" sap2010:WorkflowViewState.IdRef="Sequence_2">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -169,7 +169,7 @@
             </ui:Click.Target>
           </ui:Click>
           <Delay Duration="00:00:06" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="Delay_3" />
-          <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click-Segment" sap:VirtualizedContainerService.HintSize="334,68" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT">
+          <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click-Segment" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT">
             <ui:Click.CursorPosition>
               <ui:CursorPosition Position="Center">
                 <ui:CursorPosition.OffsetX>
@@ -181,7 +181,7 @@
               </ui:CursorPosition>
             </ui:Click.CursorPosition>
             <ui:Click.Target>
-              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7233643c-5fe0-4287-9205-e7df09846e58" Selector="[Click_segment_level]">
+              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7233643c-5fe0-4287-9205-e7df09846e58" InformativeScreenshot="81feb22a195a6b8a9e869d0f467bb44f" Selector="[Click_segment_level]">
                 <ui:Target.TimeoutMS>
                   <InArgument x:TypeArguments="x:Int32" />
                 </ui:Target.TimeoutMS>
@@ -237,7 +237,7 @@
                         <av:Size x:Key="ShapeSize">200,66</av:Size>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <Sequence DisplayName="ING Status Check " sap:VirtualizedContainerService.HintSize="992,1330" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <Sequence DisplayName="ING Status Check " sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_3">
                       <Sequence.Variables>
                         <Variable x:TypeArguments="x:Boolean" Name="found" />
                         <Variable x:TypeArguments="x:String" Name="getStatus" />
