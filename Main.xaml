@@ -113,7 +113,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <Transition.Condition>
-              <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="Ui_error is Nothing" />
+              <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="Ui_error is Nothing" sap2010:WorkflowViewState.IdRef="VisualBasicValue`1_1" />
             </Transition.Condition>
             <Transition.To>
               <State x:Name="__ReferenceID1" DisplayName="login " sap:VirtualizedContainerService.HintSize="151,71" sap2010:WorkflowViewState.IdRef="State_3">
@@ -263,7 +263,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                     <Transition.Condition>
-                      <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="Ui_error is Nothing" />
+                      <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="Ui_error is Nothing" sap2010:WorkflowViewState.IdRef="VisualBasicValue`1_2" />
                     </Transition.Condition>
                     <Transition.To>
                       <State x:Name="__ReferenceID2" DisplayName="Navigate &amp;Search" sap:VirtualizedContainerService.HintSize="134,61" sap2010:WorkflowViewState.IdRef="State_4">
@@ -310,7 +310,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                             <Transition.Condition>
-                              <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="Ui_error is  Nothing" />
+                              <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="Ui_error is  Nothing" sap2010:WorkflowViewState.IdRef="VisualBasicValue`1_3" />
                             </Transition.Condition>
                             <Transition.To>
                               <State x:Name="__ReferenceID3" DisplayName="Status_ingest" sap:VirtualizedContainerService.HintSize="134,61" sap2010:WorkflowViewState.IdRef="State_5">
@@ -344,7 +344,7 @@
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
                                     <Transition.Condition>
-                                      <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="Ui_error Is Nothing" />
+                                      <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="Ui_error Is Nothing" sap2010:WorkflowViewState.IdRef="VisualBasicValue`1_4" />
                                     </Transition.Condition>
                                     <Transition.To>
                                       <State x:Name="__ReferenceID4" DisplayName="Status_AQC" sap:VirtualizedContainerService.HintSize="134,61" sap2010:WorkflowViewState.IdRef="State_6">
@@ -381,7 +381,7 @@
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
                                             <Transition.Condition>
-                                              <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="not Ui_error is Nothing And Ui_error Is Nothing" />
+                                              <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="not Ui_error is Nothing And Ui_error Is Nothing" sap2010:WorkflowViewState.IdRef="VisualBasicValue`1_5" />
                                             </Transition.Condition>
                                             <Transition.To>
                                               <State x:Name="__ReferenceID0" DisplayName="Final State" sap:VirtualizedContainerService.HintSize="134,61" sap2010:WorkflowViewState.IdRef="State_2" IsFinal="True">
@@ -414,7 +414,7 @@
                                       </State>
                                     </Transition.To>
                                   </Transition>
-                                  <Transition DisplayName="T7" sap:VirtualizedContainerService.HintSize="450,505" sap2010:WorkflowViewState.IdRef="Transition_7">
+                                  <Transition DisplayName="error" sap:VirtualizedContainerService.HintSize="450,505" sap2010:WorkflowViewState.IdRef="Transition_7">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <av:PointCollection x:Key="ConnectorLocation">363.3,289.5 363.3,195.25 137,195.25</av:PointCollection>
@@ -433,7 +433,7 @@
                               </State>
                             </Transition.To>
                           </Transition>
-                          <Transition DisplayName="T5" sap:VirtualizedContainerService.HintSize="450,505" sap2010:WorkflowViewState.IdRef="Transition_6">
+                          <Transition DisplayName="error" sap:VirtualizedContainerService.HintSize="450,505" sap2010:WorkflowViewState.IdRef="Transition_6">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <av:PointCollection x:Key="ConnectorLocation">550,209.5 550,180 137,180</av:PointCollection>
@@ -452,7 +452,7 @@
                       </State>
                     </Transition.To>
                   </Transition>
-                  <Transition DisplayName="T8" sap:VirtualizedContainerService.HintSize="450,505" sap2010:WorkflowViewState.IdRef="Transition_8">
+                  <Transition DisplayName="error" sap:VirtualizedContainerService.HintSize="450,505" sap2010:WorkflowViewState.IdRef="Transition_8">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <av:PointCollection x:Key="ConnectorLocation">424.5,57.1 394.5,57.1 394.5,161.7 137,161.7</av:PointCollection>
@@ -474,7 +474,7 @@
               </State>
             </Transition.To>
           </Transition>
-          <Transition DisplayName="T9" sap:VirtualizedContainerService.HintSize="450,505" sap2010:WorkflowViewState.IdRef="Transition_9">
+          <Transition DisplayName="error" sap:VirtualizedContainerService.HintSize="450,505" sap2010:WorkflowViewState.IdRef="Transition_9">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <av:PointCollection x:Key="ConnectorLocation">256.6,70.5 256.6,100.5 76.7,100.5 76.7,149.5</av:PointCollection>
