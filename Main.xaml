@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="861,519" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="786,519" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -351,27 +351,15 @@
                                         <State.Entry>
                                           <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke flowchart_AQC workflow" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_10" UnSafe="False" WorkflowFileName="flowchart_AQC_Status.xaml">
                                             <ui:InvokeWorkflowFile.Arguments>
-                                              <InArgument x:TypeArguments="x:String" x:Key="search">
-                                                <Literal x:TypeArguments="x:String">&lt;html app='chrome.exe' title='CLEAR' /&gt;&lt;webctrl id='Search' tag='INPUT' /&gt;</Literal>
-                                              </InArgument>
-                                              <InArgument x:TypeArguments="x:String" x:Key="click_media_level_ingest">
-                                                <Literal x:TypeArguments="x:String">&lt;html app='chrome.exe' title='CLEAR' /&gt;&lt;webctrl aaname='ING' parentid='main_wfStatusBar' tag='SPAN' /&gt;</Literal>
-                                              </InArgument>
-                                              <InArgument x:TypeArguments="x:String" x:Key="get_status_selector">
-                                                <Literal x:TypeArguments="x:String">&lt;html app='chrome.exe' title='CLEAR' /&gt;&lt;webctrl parentid='drpDown_' tag='SPAN' /&gt;</Literal>
-                                              </InArgument>
-                                              <InArgument x:TypeArguments="x:String" x:Key="report_path">
-                                                <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Out_Config(&quot;Reportpath&quot;).ToString" />
-                                              </InArgument>
-                                              <InArgument x:TypeArguments="x:String" x:Key="Click_aqc_level">
-                                                <Literal x:TypeArguments="x:String" xml:space="preserve">&lt;html app='chrome.exe' title='CLEAR' /&gt;
+                                              <InArgument x:TypeArguments="x:String" x:Key="search">&lt;html app='chrome.exe' title='CLEAR' /&gt;&lt;webctrl id='Search' tag='INPUT' /&gt;</InArgument>
+                                              <InArgument x:TypeArguments="x:String" x:Key="click_media_level_ingest">&lt;html app='chrome.exe' title='CLEAR' /&gt;&lt;webctrl aaname='ING' parentid='main_wfStatusBar' tag='SPAN' /&gt;</InArgument>
+                                              <InArgument x:TypeArguments="x:String" x:Key="get_status_selector">&lt;html app='chrome.exe' title='CLEAR' /&gt;&lt;webctrl parentid='drpDown_' tag='SPAN' /&gt;</InArgument>
+                                              <InArgument x:TypeArguments="x:String" x:Key="report_path">[Out_Config("Reportpath").ToString]</InArgument>
+                                              <InArgument x:TypeArguments="x:String" x:Key="Click_aqc_level" xml:space="preserve">&lt;html app='chrome.exe' title='CLEAR' /&gt;
 &lt;webctrl aaname='AQC' parentid='main_wfStatusBar' /&gt;
-</Literal>
-                                              </InArgument>
-                                              <InArgument x:TypeArguments="x:String" x:Key="Click_override_pass">
-                                                <Literal x:TypeArguments="x:String" xml:space="preserve">&lt;html app='chrome.exe' title='CLEAR' /&gt;
-&lt;webctrl id='drpDown_1' innertext='                                                      AQC Override Pass                                                                                                ' /&gt;</Literal>
-                                              </InArgument>
+</InArgument>
+                                              <InArgument x:TypeArguments="x:String" x:Key="Click_override_pass" xml:space="preserve">&lt;html app='chrome.exe' title='CLEAR' /&gt;
+&lt;webctrl id='drpDown_1' innertext='                                                      AQC Override Pass                                                                                                ' /&gt;</InArgument>
                                               <InArgument x:TypeArguments="x:String" x:Key="Click_information" />
                                             </ui:InvokeWorkflowFile.Arguments>
                                           </ui:InvokeWorkflowFile>
@@ -393,10 +381,10 @@
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
                                             <Transition.Condition>
-                                              <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="not Ui_error is Nothing and Ui_error is Nothing" sap2010:WorkflowViewState.IdRef="VisualBasicValue`1_5" />
+                                              <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="Ui_error is Nothing or Not Ui_error is Nothing" />
                                             </Transition.Condition>
                                             <Transition.To>
-                                              <State x:Name="__ReferenceID0" DisplayName="Final State" sap:VirtualizedContainerService.HintSize="380,258" sap2010:WorkflowViewState.IdRef="State_2" IsFinal="True">
+                                              <State x:Name="__ReferenceID0" DisplayName="Final State" sap:VirtualizedContainerService.HintSize="134,61" sap2010:WorkflowViewState.IdRef="State_2" IsFinal="True">
                                                 <State.Entry>
                                                   <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" Body="[Out_Config(&quot;Email_body&quot;).ToString]" DisplayName="Send SMTP Mail Message" Email="[Out_Config(&quot;Email&quot;).ToString.Trim]" EnableSSL="True" sap:VirtualizedContainerService.HintSize="334,145" sap2010:WorkflowViewState.IdRef="SendMail_1" IsBodyHtml="False" Password="[Out_Config(&quot;Email_Password&quot;).ToString.Trim]" Port="465" SecureConnection="Auto" Server="mail.primefocus.com" Subject="[Out_Config(&quot;Subject&quot;).ToString]" TimeoutMS="180000" To="[Out_Config(&quot;To&quot;).ToString]">
                                                     <ui:SendMail.Files>
